@@ -1,0 +1,82 @@
+@keyframes color-changeT {
+  0%   { color: #D6FF6B; }
+  50%  { color: #FD98FB; }
+  100% { color: #D6FF6B; }
+}
+
+@keyframes color-changeB {
+  0%   { color: #FD98FB; }
+  50%  { color: #D6FF6B; }
+  100% { color: #FD98FB; }
+}
+
+h1 {
+    color: #D6FF6B;
+    font-size: 40px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: color-changeT 1s infinite;
+}
+
+body {
+    background: linear-gradient(to right, #5988FF, #FD98FB);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+h1:hover {
+    color: #FD98FB;
+}
+
+
+/* Efecto al pasar el ratón */
+img {
+    width: 300px;
+    max-width: 100%;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+/* La imagen crece y se inclina */
+img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* Tarjetas blancas para los textos */
+.tarjeta {
+    background-color: white;
+    border: 2px solid #D6FF6B;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+
+    /* Sombra alrededor de la tarjeta */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    /* Animación suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Título dentro de las tarjetas */
+.tarjeta h2 {
+    color: #5988FF;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+/* Texto dentro de las tarjetas */
+.tarjeta p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.7;
+}
